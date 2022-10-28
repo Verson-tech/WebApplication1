@@ -1,0 +1,9 @@
+﻿@model List<WebApplication1.Models.DogViewModel>
+
+<p> This is the index page</p>
+
+<ul>
+    @foreach(var dog in Model){
+        <li>@dog.Name (@dog.Age)</li>
+    }
+</ul>
